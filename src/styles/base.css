@@ -22,6 +22,6 @@
   }
 
   .grid-layout {
-    @apply tablet:grid-cols-6 tablet:gap-8 desktop:grid-cols-12 desktop:max-w-7xl grid grid-cols-4 gap-4;
+    @apply grid grid-cols-4 gap-x-4 tablet:grid-cols-6 tablet:gap-8 desktop:max-w-7xl desktop:grid-cols-12;
   }
 }

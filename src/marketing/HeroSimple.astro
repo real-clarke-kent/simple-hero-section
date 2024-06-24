@@ -6,16 +6,16 @@ import heroImg from "@/assets/prism.png";
 ---
 
 <section
-  class="grid-layout desktop:mx-24 desktop:my-24 tablet:mx-4 tablet:my-16 tablet:gap-y-8 mx-3 my-12 flex items-center gap-y-12"
+  class="grid-layout mx-3 my-12 flex auto-rows-max items-center gap-y-12 tablet:mx-4 tablet:my-16 tablet:gap-y-8 desktop:mx-24 desktop:my-24"
 >
   <div
-    class="desktop:col-span-5 tablet:gap-y-16 col-span-full grid grid-cols-subgrid gap-y-8"
+    class="col-span-full grid grid-cols-subgrid gap-y-8 tablet:gap-y-16 desktop:col-span-5"
   >
-    <div class="tablet:gap-6 col-span-full flex flex-col gap-4">
-      <h1 class="text-4xl tablet:text-5xl desktop:text-6xl font-semibold">
+    <div class="col-span-full flex flex-col gap-4 tablet:gap-6">
+      <h1 class="text-4xl font-semibold tablet:text-5xl desktop:text-6xl">
         Well crafted abstract images
       </h1>
-      <p class="tablet:text-xl text-lg">
+      <p class="text-lg tablet:text-xl">
         High quality abstract images for your projects, wallpaper and
         presentations.
       </p>
@@ -26,21 +26,21 @@ import heroImg from "@/assets/prism.png";
       <Button
         variant="secondary"
         size="2xl"
-        class="tablet:flex col-span-2 hidden"
+        class="col-span-2 hidden tablet:flex"
       >
         Learn more
       </Button>
-      <Button variant="secondary" size="xl" class="tablet:hidden col-span-2">
+      <Button variant="secondary" size="xl" class="col-span-2 tablet:hidden">
         Learn more
       </Button>
       <Button
         variant="primary"
         size="2xl"
-        class="tablet:flex col-span-2 hidden"
+        class="col-span-2 hidden tablet:flex"
       >
         See pricing
       </Button>
-      <Button variant="primary" size="xl" class="tablet:hidden col-span-2">
+      <Button variant="primary" size="xl" class="col-span-2 tablet:hidden">
         See pricing
       </Button>
     </div>
@@ -53,6 +53,6 @@ import heroImg from "@/assets/prism.png";
     height={heroImg.height}
     densities={[1, 1.5, 2]}
     loading="eager"
-    class="desktop:col-span-7 col-span-full rounded-2xl"
+    class="col-span-full rounded-2xl desktop:col-span-7"
   />
 </section>
