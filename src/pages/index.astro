@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import "@/styles/base.css";
+import HeroSimple from "@/marketing/HeroSimple.astro";
+---
+
+<Layout title="Simple Hero Section">
+  <main class="linear-bg flex min-h-dvh justify-center p-4">
+    <div
+      class="shadow-sm tablet:shadow-md desktop:shadow-lg linear-hero tablet:py-2 flex w-full justify-center rounded-md"
+    >
+      <HeroSimple />
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .linear-bg {
+    background: linear-gradient(148deg, #f9fafb 8.89%, #d2d6db 100.48%);
+  }
+
+  .linear-hero {
+    background: linear-gradient(176deg, #f9fafb 0.94%, #edf0f3 316.54%);
+  }
+</style>
